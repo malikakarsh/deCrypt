@@ -8,6 +8,8 @@
 
 _Input Array:_
 
+![](img/4.png)
+
 - The input array is 16 characters long and is represented as 4x4 matrix with each character filled row wise.
 
 _State Array:_
