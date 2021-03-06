@@ -3,7 +3,8 @@
 - Symmetric key block cipher
 - AES uses 10 rounds for 128-bit keys, 12 rounds for 192-bit keys and 14 rounds for 256-bit keys.
 - No. of keys generated = (no. of rounds + 1)
-  ![](img/1.png)
+
+![](img/1.png)
 
 _Input Array:_
 
