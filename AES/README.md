@@ -21,3 +21,11 @@ _State Array:_
 ## Encryption Process
 
 ![](img/3.jpg)
+
+### SubBytes:
+
+the left four bits of a byte act as the row number and the right four bits as the column number for sbox represented in 2D matrix. However if the sbox is represented as a 1D matrix then substitution occurs directly considering the byte itself as the index of sbox.
+
+Consider the example below:
+
+![](img/5.png)
