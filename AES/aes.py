@@ -60,6 +60,28 @@ def invSubBytes(bytes):
     return [sboxInv[int(i)] for i in bytes]
 
 
+def shiftRows(arr, n):  # takes in array to be left rotated and by how many places
+    temp = []
+    for i in range(n % len(arr), len(arr)):
+        temp.append(arr[i])
+
+    for i in range(n % len(arr)):
+        temp.append(arr[i])
+
+    return temp
+
+
+def invShiftRows(arr, n):  # takes in array to be rotated right and by how many places
+    temp = []
+    for i in range(len(arr)-(n % len(arr)), len(arr)):
+        temp.append(arr[i])
+
+    for i in range(len(arr) - (n % len(arr))):
+        temp.append(arr[i])
+
+    return temp
+
+
 def keyExpansion(key):
     N = len(key)//32  # No. of words
     # R is the no. of round keys (10 + 1 for 128 bits, 12 + 1 for 192 bits, 14 + 1 for 256 bits)
@@ -78,4 +100,6 @@ def keyExpansion(key):
 # print(len(string))
 # keyExpansion(string)
 
-print(subBytes(['164', '104', '107', '2']))
+#print(subBytes(['164', '104', '107', '2']))
+hello = invShiftRows(['a', 'b', 'c', 'd'], 6)
+print(hello)
